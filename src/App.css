@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.bg-light {
+  padding: 20px;
+  border-right: 1px solid #ddd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h4 {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* ----------- filter.jsx ------------------*/
+
+.filter-section {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter-section h4 {
+  margin-bottom: 15px;
+}
+
+.filter-section .card-header {
+  cursor: pointer;
+}
+
+.filter-section .btn-primary {
+  width: 100%;
+}
+
+
+/* ----------- ProductCard.jsx ------------------*/
+.product-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 100% !important;
 }
 
-.App-link {
-  color: #61dafb;
+.product-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-brand-image {
+  width: 70px; 
+  height: auto; 
+  margin-bottom: 10px; 
 }
+
+.was-price {
+  text-decoration: line-through;
+  color:#888;
+  margin-left: 5px; 
+} 
+
+/* ----------- ProductGrid.jsx ------------------*/
+
+
+.product-list-form {
+  position: relative;
+  width: 25%;
+  margin-left:25%;
+
+}
+
+.product-list-total {
+  margin-left:92%;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center; 
+ 
+}
+
